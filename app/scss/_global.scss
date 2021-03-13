@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container__min {
+    max-width: 1030px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.link__phone {
+    display: block;
+    letter-spacing: 2px;
+    line-height: 28px;
+    transition: all 0.5s;
+    &:hover {
+        color: $orange;
+    }
+}
+
+.call {
+    display: block;
+    text-align: right;
+    color: $orange;
+    transition: all 0.5s;
+    &:hover {
+        color: #fff;
+    }
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.btn {
+    width: 300px;
+    background-color: $darckgrey;
+    color: #fff;
+    border: 3px solid $orange;
+    border-radius: 10px;
+    padding: 14px 10px;
+    &:hover {
+        background-color: $grey;
+    }
+}
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 40px;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $orange;
+        height: 3px;
+        width: 200px;
+        bottom: 10px;
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+}
