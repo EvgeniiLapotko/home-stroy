@@ -10,6 +10,14 @@ $(function () {
         return false;
     });
 
+    $(".about__item-slider").slick({
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        fade: true,
+    });
+
     $(".slider__home").slick({
         dots: true,
         autoplay: true,
